@@ -19,7 +19,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 Node.js version 16: https://nodejs.org/en/blog/release/v16.16.0/
 
 ```
-npm inquirer
+npm i inquirer@8.2.4
 ```
 
 ## Usage
