@@ -4,9 +4,11 @@
 
 Node.js application that helps users generate a professional README file.
 
-## Table of Contents
+A lot of people tend to overlook a README file. Either the user.developer is lazy or they just do not know the proper syntax for the file. With the use of the generator the user/developer do not have to worry about either of them and create the file at ease.
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
+Based on specific questions answered by the user, a complete professional README file will be created based on those answers.
+
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -15,8 +17,9 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [License](#license)
 
 ## Installation
+Some files will be needed in order for this generator to operate.
 
-Node.js version 16: https://nodejs.org/en/blog/release/v16.16.0/
+Node.js version 16.16.0: https://nodejs.org/en/blog/release/v16.16.0/
 
 ```
 npm i inquirer@8.2.4
@@ -24,7 +27,13 @@ npm i inquirer@8.2.4
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+Below will be a link to the repository where you can clone the file onto your computer using your terminal. 
+Open the file in VS Code or whichever editor you prefer to use. Once you’re in the root directory you’ll be able to run the app.
+A video showing you how will also be provide below.
+
+### Repository:
+
+### Demo Video:
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
@@ -32,17 +41,13 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
     ![alt text](assets/images/screenshot.png)
     ```
 
-
-## Demo Video
-
-
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+No collaborators for this project. But some references are listed below:
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+- [Node Installation Guide](https://coding-boot-camp.github.io/full-stack/nodejs/how-to-install-nodejs/)
+- [Inquirer Package](https://www.npmjs.com/package/inquirer/v/8.2.4/)
+- [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide/)
 
 ## License
 
