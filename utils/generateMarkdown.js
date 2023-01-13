@@ -49,32 +49,54 @@ function renderLicenseSection(license) {
   }
  }
 
+ // Forgot to add function that return a message if user doesn't want contributors
+function renderContributingSection(confirmContributers, data) {
+  if (!confirmContributers) {
+    return `
+  Thank you for your interest! But, I will not be accepting contributions from third parties at the moment!
+    `;
+  } else {
+    return `
+  ${data}
+    `;
+  }
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
   # ${data.title}
   
   ${renderLicenseBadge(data.license)}
+
   ## Table-of-Contents
+
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
   ${renderLicenseTOC(data.license)}
   * [Contributing](#contributing)
-  * [Questions](#questions)
   
   ## [Description](#table-of-contents)
   ${data.what}
   ${data.why}
   ${data.how}
-  ## [Installation](#table-of-contents)
-  ${data.installation}
-  ## [Usage](#table-of-contents)
-  ${data.usage}
-  
+
   To add a screenshot, create an assets/images folder in your repository and upload your screenshot to it. 
   Then, using the relative filepath, add it to your README.
   ![alt text](assets/images/screenshot.png)
+
+  ## [Installation](#table-of-contents)
+  ${data.installation}
+
+  ## [Usage](#table-of-contents)
+  ${data.usage}
+  
+  ${renderLicenseSection(data.license)}
+
+  ## [Contributing](#table-of-contents)
+  
+  ${renderContributingSection(data.confirmContributers, data.contribute)}
 `;
 }
 

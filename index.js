@@ -185,6 +185,12 @@ const questions = [
     }
   },
   {
+    type: 'confirm',
+    name: 'confirmContributers',
+    message: 'Would you like to allow other developers to contribute?',
+    default: true
+},
+  {
     type: 'input',
     name: 'contribute',
     message: 'Provide guidelines for contributing. (Required)',
@@ -204,6 +210,45 @@ const questions = [
       }
     }
   },
+{
+  type: 'input',
+  name: 'what',
+  message: 'What is your project and what problem will it solve? (Required)',
+  validate: whatInput => {
+      if (whatInput) {
+          return true;
+      } else {
+          console.log('Enter what your project is.');
+          return false;
+      }
+  }
+},
+{
+  type: 'input',
+  name: 'why',
+  message: 'Why did you decide to create this project? (Required)',
+  validate: whyInput => {
+      if (whyInput) {
+          return true;
+      } else {
+          console.log('Enter why you decided to create this project.');
+          return false;
+      }
+  }
+},
+{
+  type: 'input',
+  name: 'how',
+  message: 'How will someone use this? (Required)',
+  validate: howInput => {
+      if (howInput) {
+          return true;
+      } else {
+          console.log('Enter how someone will use this project.');
+          return false;
+      }
+  }
+},
 ];
 
 // Created an array of prompts for adding screenshots with the help of a friend
@@ -299,7 +344,7 @@ const writeFile = fileContent => {
   });
 };
 
-// function to prompt questions and store user inputs
+// Function that prompts questions + store user inputs
 const init = () => {
 
   return inquirer.prompt(questions)
