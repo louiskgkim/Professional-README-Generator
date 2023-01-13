@@ -31,15 +31,21 @@ Below will be a link to the repository where you can clone the file onto your co
 Open the file in VS Code or whichever editor you prefer to use. Once you’re in the root directory you’ll be able to run the app.
 A video showing you how will also be provide below.
 
+# Generated README File
+![Generated README File](https://user-images.githubusercontent.com/115679155/212218969-129baf66-a628-4b37-9391-93cb6e575858.png)
+
+# Preview of Generated README File
+![Preview of Generated README File](https://user-images.githubusercontent.com/115679155/212218965-bf926a8f-c59a-4cfb-970d-1a269959e699.png)
+
+
 ### Repository:
+```
+https://github.com/louiskgkim/Professional-README-Generator   
+```
 
 ### Demo Video:
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![Demo Video} (https://drive.google.com/file/d/17jzAC6ap_BKl2MfOZedtSDsamm4yYsfG/view?usp=share_link)
 
 ## Credits
 
