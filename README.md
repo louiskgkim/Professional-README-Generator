@@ -45,7 +45,7 @@ https://github.com/louiskgkim/Professional-README-Generator
 
 ### Demo Video:
 
-![Demo Video} (https://drive.google.com/file/d/17jzAC6ap_BKl2MfOZedtSDsamm4yYsfG/view?usp=share_link)
+- [Demo Video](https://drive.google.com/file/d/17jzAC6ap_BKl2MfOZedtSDsamm4yYsfG/view?usp=share_link)
 
 ## Credits
 
