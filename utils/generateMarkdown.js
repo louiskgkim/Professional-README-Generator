@@ -39,26 +39,13 @@ function renderLicenseSection(license) {
 
 // Added a function that returns license in table of contents
 // If there is no license it should return an empty string
- function renderLicenseTOC(license) {
+function renderLicenseTOC(license) {
   if (license !== 'no license') {
-  return `
+    return `
   * [License](#license)
     `;
   } else {
     return ' ';
-  }
- }
-
- // Forgot to add function that return a message if user doesn't want contributors
-function renderContributingSection(confirmContributers, data) {
-  if (!confirmContributers) {
-    return `
-  Thank you for your interest! But, I will not be accepting contributions from third parties at the moment!
-    `;
-  } else {
-    return `
-  ${data}
-    `;
   }
 }
 
@@ -75,7 +62,6 @@ function generateMarkdown(data) {
   * [Installation](#installation)
   * [Usage](#usage)
   ${renderLicenseTOC(data.license)}
-  * [Contributing](#contributing)
   
   ## [Description](#table-of-contents)
   ${data.what}
@@ -93,10 +79,6 @@ function generateMarkdown(data) {
   ${data.usage}
   
   ${renderLicenseSection(data.license)}
-
-  ## [Contributing](#table-of-contents)
-  
-  ${renderContributingSection(data.confirmContributers, data.contribute)}
 `;
 }
 

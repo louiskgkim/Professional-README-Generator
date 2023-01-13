@@ -93,10 +93,6 @@ const questions = [
         checked: false
       },
       {
-        name: 'How to Contribute',
-        checked: false
-      },
-      {
         name: 'Credits',
         checked: false
       },
@@ -180,32 +176,6 @@ const questions = [
         return true;
       } else {
         console.log('Please provide license information.');
-        return false;
-      }
-    }
-  },
-  {
-    type: 'confirm',
-    name: 'confirmContributers',
-    message: 'Would you like to allow other developers to contribute?',
-    default: true
-},
-  {
-    type: 'input',
-    name: 'contribute',
-    message: 'Provide guidelines for contributing. (Required)',
-    when: ({ confirmContributers }) => {
-      if (confirmContributers) {
-        return true;
-      } else {
-        return false;
-      }
-    },
-    validate: contributerInput => {
-      if (contributerInput) {
-        return true;
-      } else {
-        console.log('Provide contributer guidelines.');
         return false;
       }
     }
